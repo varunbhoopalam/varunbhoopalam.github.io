@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+
+li {
+    list-style: none;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+.js-list-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: minmax(40px, auto);
+}
+
+.js-list-container li {
+    font-size: 80%;
+    text-align: center;
+}

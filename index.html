@@ -1,1 +1,42 @@
-<h1>Hello World</h1>
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div>
+            <ul class="js-list-container">
+                <li>
+                    JavaScript Concepts
+                </li>
+                <li>
+                    Execution Context
+                </li>
+                <li>
+                    Execution Stack
+                </li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>
+                    <h2>
+                        Execution Context
+                    </h2>
+                    <p>
+                        An Execution Context is the environment that JavaScript code runs in. Execution Contexts are
+                        comprised of the global object, the 'this'(link to this concept) variable, a reference to the
+                        outer environment, and the code to be executed.
+                        <br>
+                        When the JavaScript compiler starts to work through a file, it creates a Global Execution
+                        Context. The Global Execution Context is the base Execution Context. In the browser, the Global
+                        Execution Context will have the window object be both 'this' and the Global Object. The outer
+                        environment is null. The code to be executed will be what code is in the file.
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
