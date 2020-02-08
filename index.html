@@ -7,6 +7,8 @@
 <body>
     <div class="wrapper">
         <div>
+            <div>My Developer Toolbelt</div>
+            <div>(Convert to a tooltip for above: I've organized this blog page in this long run on page because like a tool-belt. This series of short articles discussing the tools in which I work should be all accessable in one place. If articles are too detailed they are not suceeding here in providing easy to digest knowledge about high level concepts about what is going on with the tools in my Toolbelt.</div>
             <ul class="js-list-container">
                 <li>
                     JavaScript Concepts
@@ -15,15 +17,17 @@
                     Execution Context
                 </li>
                 <li>
-                    Execution Stack
+                    Scope Chain
+                </li>
+                <li>
+                    Operators
                 </li>
             </ul>
         </div>
         <div>
             <ul>
-                <li class="execution-context">
+                <li class="blog-template">
                     <div>
-
                         <h2>
                             Execution Context
                         </h2>
@@ -36,10 +40,37 @@
                             Context. The Global Execution Context is the base Execution Context. In the browser, the Global
                             Execution Context will have the window object be both 'this' and the Global Object. The outer
                             environment is null. The code to be executed will be what code is in the file.
+                            <br>
+                            The creation of an exection context is often refered to as the first phase of an execution context. In this first phase, the JavaScript engine sets up memory space for functions and variables. In the second phase, the JavaScript engine will run the code inside of the execution context line by line. 
+                            <br>
+                            Execution contexts other than the global execution context are created on any function invocation. If the engine encounters a function invocation, it will stop where it is in the current execution context and build another execution context that it puts on top of the first one. We refer to this concept as the Execution Stack. Once JavaScript is finished executing the code of an execution context, it pops it off of the stack and start working on the next execution context in the stack.This behavior is a consequence of JavaScript being single-threaded and synchronous. JavaScripts executes one line at a time and one execution context at a time.
                         </p>
                     </div>
                     <div>
                         <img src="global-execution-context.png" alt="Global execution context diagram">
+                    </div>
+                </li>
+                <li class="blog-template">
+                    <div>
+                        <h2>
+                            Scope Chain
+                        </h2>
+                        <p>
+                            The scope chain is the concept that defines how the JS Engine searches for variable values while in an execution context. An execution context has a reference to it's outer environment. This outer environment is determined by a function's lexical environment. A function's lexical environment is where it was physically defined. So, if function "a" was defined inside of function "b," function "a" lexical environment and subsequently outer reference will be function "b". If function "b" was defined in the global context, it's outer reference will be the global environment. Scope Chain uses this relationship to look for variables in memory space. A variable referenced in a function will look down it's scope chain for the first instantiation of that variable. Note, the same variable can be instantiated in different Execution Contexts which could lead to some undesired behavior if one doesn't understand the scope chain.
+                        </p>
+                    </div>
+                    <div>
+                        <img src="lexical-environment.png" alt="Lexical environment context diagram">
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <h2>
+                            Operators
+                        </h2>
+                        <p>
+                            Operators are special functions in JavaScript that are invoked syntactically different than regular functions. Assignment(=), addition(+), and equality (==) are a few of the operators in JavaScript. Operators have special properties, precedence and associativity. Expressions with multiple operators in them rely on operator precedence to decide which ones to execute first and in what order. This concept is similar to order of operations from mathematics. When operators have the same precedence value, they rely on their operator associativity to determine which order to execute the operators. Operators are either left to right associative or right to left associative.
+                        </p>
                     </div>
                 </li>
             </ul>

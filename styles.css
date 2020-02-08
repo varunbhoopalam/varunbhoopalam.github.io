@@ -30,7 +30,7 @@ img {
     text-align: center;
 }
 
-.execution-context {
+.blog-template {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
