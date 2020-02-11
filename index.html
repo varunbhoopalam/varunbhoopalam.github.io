@@ -22,6 +22,12 @@
                 <li>
                     Operators
                 </li>
+                <li>
+                    Functions
+                </li>
+                <li>
+                    Closures
+                </li>
             </ul>
         </div>
         <div>
@@ -70,6 +76,41 @@
                         </h2>
                         <p>
                             Operators are special functions in JavaScript that are invoked syntactically different than regular functions. Assignment(=), addition(+), and equality (==) are a few of the operators in JavaScript. Operators have special properties, precedence and associativity. Expressions with multiple operators in them rely on operator precedence to decide which ones to execute first and in what order. This concept is similar to order of operations from mathematics. When operators have the same precedence value, they rely on their operator associativity to determine which order to execute the operators. Operators are either left to right associative or right to left associative.
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <h2>
+                            Functions
+                        </h2>
+                        <p>
+                            All functions are JavaScript objects. A JavaScript Object is a collection of key value pairs where the value can be JavaScript primitives, JavaScript objects, and JavaScript functions. Functions here are special types of objects that are invocable with the parenthesis syntax and can store invokable code. When a function is invoked an execution context is created. Since functions are objects, you are able to treat them like a regular JS object and give them properties. 
+                            <br>
+                            In JavaScript, functions are considered "first class." This means that everything you can do with objects and primitives, you can do with functions. For example, you are able to pass functions as a parameter to other functions. This property allows for JavaScript to be used in the functional programming paradigm.
+                            <br>
+                            Functions can be defined a couple of different ways and modern JavaScript has different syntax for these. The main distinction are function expressions versus function statements. Function expressiosn are units of code that actually return a value. Function statements do not return a value. Function expressions can be assigned to a variable or not assigned but in this case must be surrounded by parenthesis. A common pattern in JS programming is the use of IIFE, Immediately Invoked Function Expression. Since the function expressions returns the defined function, it is possible to invoke this value immediately with the function invokation syntax. This is used in some libraries to avoid namespace collisions with other JavaScript packages or scripts. A namespace collision can occur in situations where two different projects are adding the same variable to the global object. By using IIFEs, JavaScript progams avoid adding to the global namespace and instead add to the context of the function.
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <h2>
+                            Closures
+                        </h2>
+                        <p>
+                            Closures are created when a function is defined. This gives a function access to it's lexical environment even after the execution context has popped off of the stack. It's memory remains and any function invocation will have access to any variables and methods from the lexical environment. To use closures, you can have a function expose a function, i.e. return an inner defined function. Closures can be useful in cases of data privacy. It can also be useful when using function factory patterns and invoking function currying, setting permanent parameters that are borrowed by inner parameters. Let's take the following code and understand how closures allowed this to happen.
+                            <div>
+                                Code block:
+                                function add(y) {
+                                    return (x) => {
+                                        x+y
+                                    }
+                                }
+                                const add5 = add(5)
+                                const add10 = add(10)
+                            </div>
+                            As you can see here from this contrived example, I didn't have to implement multiple add methods. I had a function expose a function and since the "y" variable in each function via the closure. 
                         </p>
                     </div>
                 </li>
