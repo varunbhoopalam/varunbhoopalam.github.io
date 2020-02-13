@@ -28,6 +28,9 @@
                 <li>
                     Closures
                 </li>
+                <li>
+                    Prototypical Inheritance
+                </li>
             </ul>
         </div>
         <div>
@@ -111,6 +114,18 @@
                                 const add10 = add(10)
                             </div>
                             As you can see here from this contrived example, I didn't have to implement multiple add methods. I had a function expose a function and since the "y" variable in each function via the closure. 
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <h2>
+                            Prototypical Inheritance
+                        </h2>
+                        <p>
+                            Inheritance is an comes from object oriented paradigms. It means one objects getting access to the properties and methods of another object. JavaScript implements this through prototypes. Proto is a special reference on JavaScript objects. When a method is called on an object, if the JavaScript engine cannot find it on the object it will look for it next in the Proto reference. It will continue down this path until it's found the method thus establishing the prototype chain. 
+                            <br>
+                            Everything in JavaScript is an object or primitive. All arrays, objects, and functions inherit from the base prototype object eventually. 
                         </p>
                     </div>
                 </li>
