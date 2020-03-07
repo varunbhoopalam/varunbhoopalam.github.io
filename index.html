@@ -109,6 +109,32 @@
                     </div>
                 </li>
             </ul>
+            <h2>
+                Kotlin
+            </h2>
+            <ul>
+                <li>
+                    <h3>
+                        Nullability
+                    </h3>
+                    <body>
+                        Nullability in Kotlin is handled explicitly. Objects must be declared nullable to allow null assignment. By default Kotlin objects are non-nullable. This can end up being very useful in programs as most errors around null become compilation errors rather than run-time errors. Features that save potential production issues at compile time are very powerful.
+                        <br>
+                        There are different built-in operators to work nicely with nullable objects and values in Kotlin. These include the elvis(?:), null-safe call (?.), and safe case (as?). Working with these operators can make writing null safe code very readable. In the below example, the safe-call operator will only call the fooMethod if the object is not null, else it will return null.
+                        <pre>
+                            <code>
+                                //Code without null-safe operator
+                                if (object != null) {
+                                    object.fooMethod()
+                                }
+                                //Code with null-safe operator
+                                object?.fooMethod()
+                            </code>
+                        </pre>
+                        You can still get Null Pointer Exceptions (NPE) at runtime in Kotlin a few ways. A couple common ways of getting a NPE are the use of the not-null assertion operator (!!) and working with generics and platform types. Sometimes, nullability is not always the best pattern to use. For example, if you must wait to initialize a parameter a pattern to use instead of marking that parameter as null would be to use the lateinit property on that parameter.
+                    </body>
+                </li>
+            </ul>
         </div>
     </div>
 </body>
