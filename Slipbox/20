@@ -1,3 +1,4 @@
-When designing responsive webpages, design for the smallest device and then add thresholds and layout choices for subsequently bigger screens.
+Responsive web pages serve content optimized for the client device which can range from a smart-watch to a desktop monitor.
 
 <S Advanced CSS Concepts />
+<BL 21 />
