@@ -1,0 +1,7 @@
+[Course on EdX by Microsoft](https://www.edx.org/course/advanced-css-concepts)
+
+A characteristic of responsive web-sites is it serves content optimized for a variety of accessing devices from phone to desktop. This course was designed to show the different tools the browser offers to help make webpages responsive. Media queries return information about the client window size and viewport. A common pattern is to set different layouts with grid/flexbox based on threshold/breakpoint of what size is returned from these queries. Further, the information from these queries can be used to optimize things like the reading experience and pixel resolution. When building layouts, the instructors advised to start designing with the smallest device as default and going from there. 
+
+There are other tools to aid in crafting webpages. CSS modules are intended to break bigger pages into self-contained, re-usable building blocks. There are many design patterns/paradigms to using these modules like OOCSS and SMACSS. Building scalable CSS modules that is easy to interpret and re-factor requires abstraction between layout and positions. As a tip, relative and absolute positioning are powerful tools within CSS to achieve desired layouts.
+
+Be mindful that different browsers have different features because a webpage may not work on all websites if key features are missing. There are tools to help detect, test, and polyfill missing features. These tools allow for the flexibility of programatically dealing with missing features.
