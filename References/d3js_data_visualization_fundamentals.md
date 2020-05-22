@@ -21,4 +21,4 @@ For drawing data, Lars recognized this pattern.
 3. Calculate scales
 4. Join data and draw
 5. Add Axis 
-6. Further refine data
+6. Refine drawing
