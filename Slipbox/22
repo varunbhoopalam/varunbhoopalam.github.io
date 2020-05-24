@@ -1,0 +1,4 @@
+D3.js is a low-level JavaScript library for manipulating the (DOM) Document Object Model with data to create visualizations. The primary abstraction it offers is to join data to DOM elements. It uses other web technologies like SVG to do the actual drawing in the browser.
+
+<S D3.js Data Visualization Fundamentals />
+<L 23 />
