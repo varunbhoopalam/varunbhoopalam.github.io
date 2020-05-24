@@ -9,31 +9,29 @@ D3 is a low-level library. It offers a lot of control of dom manipulation to the
 - General Update Pattern: This pattern exists to take advantage of the D3 data join. As a consequence, code becomes structured to abstract dyanamic parts of the code from static.
   - Create or get an existing d3 dom element, join new data to this element to create the data state categories, then deal with each category of data states programatically
 
-Throughout the course, Lars touches on topics of making better choices through visual design. Often this is motivated by having the audience of the visualization to work less. 
+- Visual Design: This is a field of study to enhance usability/readability and reduce cognitive burden for understanding visuals. Understanding visual design concepts and patterns is key to making more effective visualization.
+  - Transitions are used to reduce cognitive load by making it easier to follow data. They help maintain object constancy.
+  - Interactions have many different consequences as there are many different types of interactions available with data visualization. For example, Highlighting can reduce distraction while tooltips can serve additional information about a data point.
+  
+- SVG: Lars focuses on using SVG as the drawing tool. SVG defines a canvas of an absolute pixel length. This canvas accepts children elements like line, circle, and text. SVG offers the ability to group children together and apply transformations to the group.
 
-Transitions are used to reduce cognitive load by making it easier to follow data. They help maintain object constancy.
-
-There are many interaction tools available for data visualization that have a variety of consequences. Highlighting can reduce distraction while tooltips can serve additional information about a data point.
-
-Lars focuses on using SVG as the drawing tool. SVG defines a canvas of an absolute pixel length. This canvas accepts children elements like line, circle, and text. SVG offers the ability to group children together and apply transformations to the group.
-
-The re-usable module pattern intent is to create modules to share configurable data visualizations created from D3. It suggests to have sensible defaults for configuration and use chainable function calls after object instantiation. One way this can be achieved is via closure.
+- Re-usable module pattern: The intent is to create modules to share configurable data visualizations created from D3. It suggests to have sensible defaults for configuration and use chainable function calls after object instantiation. One way this can be achieved is via closure.
 
 Lars also offers a couple systematic approaches to common problems. 
 
-For data visualization in general, he recognized this cycle. 
-1. Define the goal
-2. Source, shape and clean the data
-3. Draw the data
-4. Collect insight
-5. Refine goal
-Repeate the process until satisfaction
+- For data visualization in general, he recognized this cycle. 
+  1. Define the goal
+  2. Source, shape and clean the data
+  3. Draw the data
+  4. Collect insight
+  5. Refine goal
+  6. Go back to step 1 if not satisfied
 
-For drawing data, Lars recognized this pattern.
-0. Sketch desired visualization
-1. Fetch and transform data
-2. Chart dimensions
-3. Calculate scales
-4. Join data and draw
-5. Add Axis 
-6. Refine drawing
+- For drawing data, Lars recognized this pattern.
+  1. Sketch desired visualization
+  2. Fetch and transform data
+  3. Chart dimensions
+  4. Calculate scales
+  5. Join data and draw
+  6. Add Axis 
+  7. Refine drawing
