@@ -1,8 +1,13 @@
 Pluralsight course by Lars Verspohl
 
-D3 is a low-level Javascript Library for manipulating the document object model(DOM) based on data. It's a collection of modules which revolve around the core abstraction of binding data to dom elements. It uses web technologies (HTML, SVG, CANVAS) to actually do the drawing in the DOM and helps manage configuration of these technologies. By binding data to dom elements, the dom elements can size, transform, shape, color themselves appropriately to the specification. The full data join is comprised of three data change states, enter, update and exit state. Lars suggests the general update pattern as a way of handling the full data join. Create or get an existing d3 dom element, join new data to this element, then deal with each category of data states programatically. With this pattern dynamic parts of the code live in the update function and static/set up live outside. 
+Lars covers D3.js in depth at a conceptual level and shows examples to illustrate the concepts covered. To have an in-depth understanding of what D3.js offers, he has to introduce the audience to other concepts fundamental to creating data visualization.
 
-D3 offers many helper modules/functions like one to scale data to the screen, for example turning dollars into pixel locations. Since D3 is a low-level library, it offers a lot of control of dom manipulation to the user.
+D3 is a low-level Javascript Library for manipulating the document object model(DOM) with data. D3 is a collection of modules. The core abstraction it offers is binding data to dom elements. By binding data to dom elements, the dom elements can size, transform, shape, color themselves to the specification creating informative visualization. The data join produces data categorized into differnt data change states; enter, update and exit state. D3 uses web technologies (HTML, SVG, CANVAS) to actually do the drawing in the DOM. D3 offers many helper libraries on top of the core data join abstraction. This ranges from functions to help scale data to the screen/pixel locations to stratification of data for hierarchical structure to user interaction infrastructure to capture user and browser events.
+
+D3 is a low-level library. It offers a lot of control of dom manipulation to the user. Because of this it can have a higher learning curve to use than other higher-level libraries that require the user to know less. The following concepts are all useful to know when working with D3.
+
+- General Update Pattern: This pattern exists to take advantage of the D3 data join. As a consequence, code becomes structured to abstract dyanamic parts of the code from static.
+  - Create or get an existing d3 dom element, join new data to this element to create the data state categories, then deal with each category of data states programatically
 
 Throughout the course, Lars touches on topics of making better choices through visual design. Often this is motivated by having the audience of the visualization to work less. 
 
