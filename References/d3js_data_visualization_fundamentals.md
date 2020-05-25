@@ -17,6 +17,8 @@ D3 is a low-level library. It offers a lot of control of dom manipulation to the
 
 - Re-usable module pattern: The intent is to create modules to share configurable data visualizations created from D3. It suggests to have sensible defaults for configuration and use chainable function calls after object instantiation. One way this can be achieved is via closure.
 
+- Data Structures: It is impossible to create certain visualization unless data is structured in a way that allows for it. D3 has some helper libraries to move and re-structure data. It is important to understand what kind of data, format of data, and structure of data to know what visualizations are then possible to create to answer questions about the data.
+
 Lars also offers a couple systematic approaches to common problems. 
 
 - For data visualization in general, he recognized this cycle. 
