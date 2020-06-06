@@ -1,1 +1,4 @@
 By Ana Figueiras [Source](https://www.researchgate.net/publication/283855695_Towards_the_Understanding_of_Interaction_in_Information_Visualization)
+
+Data visualization is as a tool to help give meaning and insight to abstract data. This paper proposes that interaction is a part of data visualization. The effect on cognition/understanding when interaction is introduced to data visualization is varied not causuly known. This paper proposes that one reason for this is that the world does not have a wholistic view of what interaction is and encompases. There are a few reasons for this. Data visualization techniques continue to evolve and grow. As of 2015, there is no accepted standard for data visualization categories. To have a holistic view of interaction, this paper attempts to solve the lack of categorizing in visualization. For refererence, the visualizations Ana collected are documented [here](https://rethinkingvis.com/#all).
+
