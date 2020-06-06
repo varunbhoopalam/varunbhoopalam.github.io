@@ -19,4 +19,6 @@ Data visualization is as a tool to help give meaning and insight to abstract dat
 
 8. <strong>Refigure and Encode:</strong> This gives user more direct control over the visualization to tranform it to gain insight. Possible examples of these techniques are allowing a user to change spatial reprentation of the data by ordering ascending when it was descending data points. This can also manifest as changing data groupings and colors.
 
-9. <strong>Participation and Collaboration:</strong>
+9. <strong>Participation and Collaboration:</strong> This enables more than 1 user to contribute to understanding and interpretation of a visualization. This is motivated from human psychology. Sensemaking and data interpretation are social activities and offer benefits that were harder or not possible on an individual level from anything like insight derived to additional engagement. Techniques that allow for social insight include tags, links,bookmarks, doubly linked discussions, graphical annotations, comments, etc. Often, comments are the only technique used within this category as these can be difficult to implement.
+
+10. <strong>Gamification:</strong> Indulsion of game mechanics or game design patterns can improve the user experience and engagement with the content. Examples include narrative context, reputation mechanics, levels, time constraints and goals.
