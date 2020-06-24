@@ -1,3 +1,4 @@
-Api first is an approach to software building. It stresses to design, document, and debug the intended api before implementation. This offers visibility and feedback in an enterprise or micro-service framework where other apis are dependant on the one being built.
+Api first is an approach to software building. It stresses to design, document, and debug the intended api before implementation. Often this means creating an OpenAPI spec and using tooling around it for sharing and documentation. This offers visibility and feedback in an enterprise or micro-service framework where other apis are dependant on the one being built.
 
 <S API First Design Principles by Brian Busche />
+<L 35 />
