@@ -1,0 +1,4 @@
+Making impossible states impossible in Elm development is the notion to rely on the rigourous type system and compiler to enforce certain constraints imposed by the business logic that is being modeled by software.
+
+<S Making Impossible States Impossible />
+<L 38 />
