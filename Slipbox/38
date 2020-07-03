@@ -1,0 +1,3 @@
+Elm programming language is a static typed functional front end programming language. It compiles down to JavaScript to work in the browser. Elm is known for having a developer friendly compiler and was built in a way to have minimal to none run-time errors.
+
+<S https://elm-lang.org/news/compilers-as-assistants />
