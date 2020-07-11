@@ -1,0 +1,5 @@
+In Elm, building data structures can be done by mapping project requirements to custom types and further refining handcrafted/union types until structural problems are solved. Opaque types with accessors and mappers are a common pattern when building in this way.
+
+<S Make Data Structures />
+<L 38 />
+<L 41 />
