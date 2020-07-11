@@ -1,0 +1,4 @@
+Good module design exposes as little detail as possible. By not exposing implementation details, using a public api cannot break the api and therefore there is less of a chance of introducing a bug from this contract. It can maintain invariants, a way to enforce rules that the data structure cannot. A refactor of the implementation details will not be a breaking change to the public api. This results in less refactoring for users of the api.
+
+<S The life of a file />
+<BL 38b />
