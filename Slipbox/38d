@@ -1,0 +1,3 @@
+An invariant in programming is a property of the program state that is always true. For example, this could be a rule of a program enforcing that all lists in a view function have at least one member. An correct implementation of this view function will maintain this invariant.
+
+<S https://stackoverflow.com/questions/112064/what-is-an-invariant />
