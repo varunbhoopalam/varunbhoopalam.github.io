@@ -1,0 +1,4 @@
+The appropriate way to grow Elm code is to focus on specifying an appropriate data model with custom Elm types. As logic build up around certain types, it may make sense to make them modules and split code that way.
+ 
+<S The life of a file />
+<L 38 />
