@@ -85,6 +85,11 @@ INSERT INTO notes VALUES(75,'Recycling is a more efficient way of producing good
 INSERT INTO notes VALUES(76,'Eduction is a central problem for recyling. Potentially recyclable material is thrown in the trash as a result of a lack of education on the value of recyling or on what can be recycled. Similarly a lack of education can be the cause of non-recyclable material that gets into recyling.','no source','regular');
 INSERT INTO notes VALUES(77,'Fear is the apprehension of future events. Uncertainty that is either created or stems from this fear can deter action.','page 51 from Start Something That Matters by Blake Mycoske','regular');
 INSERT INTO notes VALUES(78,'We procrastinate to cope with fear/anxiety over completing tasks. Procrastination can be a technique to avoid confronting this fear/anxiety and serve temporary relief.','The NOW HABIT by Neil Fiore','regular');
+INSERT INTO notes VALUES(79,'Negative self talk puts someone into a victim mindset which removes their percieved control over a situation and diverts energy from the task at hand to thoughts of what to do if they weren''t a victim in this situation.','The NOW HABIT by Neil Fiore','regular');
+INSERT INTO notes VALUES(80,'Negative self talk can lead someone to use the vehicle of procrastination to find relief from their lack of control of the situation','The NOW HABIT by Neil Fiore','regular');
+INSERT INTO notes VALUES(81,'Guilt free play is vital to enable periods of focused, quality work. Guilt free play re-energizes and re-vitalizes the individual. Guilt free play tackles some of the root causes of why individuals reach for procrastination.','The NOW HABIT by Neil Fiore','regular');
+INSERT INTO notes VALUES(82,'In the scope of doing quality work, one benefit from adding guilt free play regularly to a schedule is that it allows time for the Ziegarnik effect to take hold and inspiration strike during play time.','Connection','regular');
+INSERT INTO notes VALUES(83,'Why do we procrastinate?','Index','index');
 CREATE TABLE links (
 id INTEGER PRIMARY KEY,
 source INTEGER NOT NULL,
@@ -143,6 +148,12 @@ INSERT INTO links VALUES(49,73,74);
 INSERT INTO links VALUES(50,73,75);
 INSERT INTO links VALUES(51,14,76);
 INSERT INTO links VALUES(52,77,78);
+INSERT INTO links VALUES(53,78,80);
+INSERT INTO links VALUES(54,79,80);
+INSERT INTO links VALUES(55,78,81);
+INSERT INTO links VALUES(56,31,82);
+INSERT INTO links VALUES(57,81,82);
+INSERT INTO links VALUES(58,83,78);
 CREATE TABLE actions (
 id INTEGER PRIMARY KEY,
 type TEXT NOT NULL,
@@ -283,4 +294,15 @@ INSERT INTO actions VALUES(131,'deleteNote','id: 78, content: Test Note!, source
 INSERT INTO actions VALUES(132,'createNote','id: 78, content: We procrastinate to cope with fear/anxiety over completing tasks., source: The NOW HABIT by Neil Fiore, variant: regular)');
 INSERT INTO actions VALUES(133,'insertLink','id: 52, source: 77, target: 78');
 INSERT INTO actions VALUES(134,'editNote','id: 78, oldContent: We procrastinate to cope with fear/anxiety over completing tasks., oldSource: The NOW HABIT by Neil Fiore, newContent: We procrastinate to cope with fear/anxiety over completing tasks. Procrastination can be a technique to avoid confronting this fear/anxiety and serve temporary relief., newSource: The NOW HABIT by Neil Fiore, variant: regular)');
+INSERT INTO actions VALUES(135,'createNote','id: 79, content: Negative self talk puts someone into a victim mindset which removes their percieved control over a situation and diverts energy from the task at hand to thoughts of what to do if they weren''t a victim in this situation., source: The NOW HABIT by Neil Fiore, variant: regular)');
+INSERT INTO actions VALUES(136,'createNote','id: 80, content: Negative self talk can lead someone to use the vehicle of procrastination to find relief from their lack of control of the situation, source: The NOW HABIT by Neil Fiore, variant: regular)');
+INSERT INTO actions VALUES(137,'insertLink','id: 53, source: 78, target: 80');
+INSERT INTO actions VALUES(138,'insertLink','id: 54, source: 79, target: 80');
+INSERT INTO actions VALUES(139,'createNote','id: 81, content: Guilt free play is vital to enable periods of focused, quality work. Guilt free play re-energizes and re-vitalizes the individual. Guilt free play tackles some of the root causes of why individuals reach for procrastination., source: The NOW HABIT by Neil Fiore, variant: regular)');
+INSERT INTO actions VALUES(140,'insertLink','id: 55, source: 78, target: 81');
+INSERT INTO actions VALUES(141,'createNote','id: 82, content: In the scope of doing quality work, one benefit from adding guilt free play regularly to a schedule is that it allows time for the Ziegarnik effect to take hold and inspiration strike during play time., source: Connection, variant: regular)');
+INSERT INTO actions VALUES(142,'insertLink','id: 56, source: 31, target: 82');
+INSERT INTO actions VALUES(143,'insertLink','id: 57, source: 81, target: 82');
+INSERT INTO actions VALUES(144,'createNote','id: 83, content: Why do we procrastinate?, source: Index, variant: index)');
+INSERT INTO actions VALUES(145,'insertLink','id: 58, source: 83, target: 78');
 COMMIT;
