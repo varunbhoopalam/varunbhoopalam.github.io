@@ -84,6 +84,7 @@ INSERT INTO notes VALUES(74,'Recycled materials have lost value over time. It is
 INSERT INTO notes VALUES(75,'Recycling is a more efficient way of producing goods. When compared to virgin material mined from the earth, the energy it takes to produce 1 can can produce 20 cans from recycled goods. This information was not sourced and verified.','[what happens to your recycling after it''s collected](https://www.youtube.com/watch?v=s4LZwCDaoQM) 1:39','regular');
 INSERT INTO notes VALUES(76,'Eduction is a central problem for recyling. Potentially recyclable material is thrown in the trash as a result of a lack of education on the value of recyling or on what can be recycled. Similarly a lack of education can be the cause of non-recyclable material that gets into recyling.','no source','regular');
 INSERT INTO notes VALUES(77,'Fear is the apprehension of future events. Uncertainty that is either created or stems from this fear can deter action.','page 51 from Start Something That Matters by Blake Mycoske','regular');
+INSERT INTO notes VALUES(78,'We procrastinate to cope with fear/anxiety over completing tasks. Procrastination can be a technique to avoid confronting this fear/anxiety and serve temporary relief.','The NOW HABIT by Neil Fiore','regular');
 CREATE TABLE links (
 id INTEGER PRIMARY KEY,
 source INTEGER NOT NULL,
@@ -141,6 +142,7 @@ INSERT INTO links VALUES(48,68,69);
 INSERT INTO links VALUES(49,73,74);
 INSERT INTO links VALUES(50,73,75);
 INSERT INTO links VALUES(51,14,76);
+INSERT INTO links VALUES(52,77,78);
 CREATE TABLE actions (
 id INTEGER PRIMARY KEY,
 type TEXT NOT NULL,
@@ -276,4 +278,9 @@ INSERT INTO actions VALUES(126,'insertLink','id: 48, source: 68, target: 69');
 INSERT INTO actions VALUES(127,'insertLink','id: 49, source: 73, target: 74');
 INSERT INTO actions VALUES(128,'insertLink','id: 50, source: 73, target: 75');
 INSERT INTO actions VALUES(129,'insertLink','id: 51, source: 14, target: 76');
+INSERT INTO actions VALUES(130,'createNote','id: 78, content: Test Note!, source: Test Note!, variant: regular)');
+INSERT INTO actions VALUES(131,'deleteNote','id: 78, content: Test Note!, source: Test Note!, variant: regular)');
+INSERT INTO actions VALUES(132,'createNote','id: 78, content: We procrastinate to cope with fear/anxiety over completing tasks., source: The NOW HABIT by Neil Fiore, variant: regular)');
+INSERT INTO actions VALUES(133,'insertLink','id: 52, source: 77, target: 78');
+INSERT INTO actions VALUES(134,'editNote','id: 78, oldContent: We procrastinate to cope with fear/anxiety over completing tasks., oldSource: The NOW HABIT by Neil Fiore, newContent: We procrastinate to cope with fear/anxiety over completing tasks. Procrastination can be a technique to avoid confronting this fear/anxiety and serve temporary relief., newSource: The NOW HABIT by Neil Fiore, variant: regular)');
 COMMIT;
