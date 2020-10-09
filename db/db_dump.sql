@@ -90,6 +90,15 @@ INSERT INTO notes VALUES(80,'Negative self talk can lead someone to use the vehi
 INSERT INTO notes VALUES(81,'Guilt free play is vital to enable periods of focused, quality work. Guilt free play re-energizes and re-vitalizes the individual. Guilt free play tackles some of the root causes of why individuals reach for procrastination.','The NOW HABIT by Neil Fiore','regular');
 INSERT INTO notes VALUES(82,'In the scope of doing quality work, one benefit from adding guilt free play regularly to a schedule is that it allows time for the Ziegarnik effect to take hold and inspiration strike during play time.','Connection','regular');
 INSERT INTO notes VALUES(83,'Why do we procrastinate?','Index','index');
+INSERT INTO notes VALUES(84,'Learned helplessness is the phenomenon attributing an individual''s unhappiness to that individual''s perception of helplessness and their perception of a lack of control of their environment.','User Interface Design For Programmers by Joel Spolsky','regular');
+INSERT INTO notes VALUES(85,'A well designed user interface behaves exactly as the user expects it to.','User Interface Design For Programmers by Joel Spolsky','regular');
+INSERT INTO notes VALUES(86,'Tools that do not behave as expected can cause a user to feel helplessness and not in control of their environment.','User Interface Design for Programmers by Joel Spolsky','regular');
+INSERT INTO notes VALUES(87,'A User Model is a user''s idea of how a program works. The Program Model is how it actually works. ','User Interface Design For Programmers by Joel Spolsky','regular');
+INSERT INTO notes VALUES(88,'How do we think about user interface design?','Index','index');
+INSERT INTO notes VALUES(89,'It''s often much easier to change the program model to adhere to the user model than to change the user model to adher to the program model.','User Interface Design For Programmers by Joel Spolsky','regular');
+INSERT INTO notes VALUES(90,'It''s possible and probable to have uncertainty about what the aggregate user model is. Often research, like user interviews and experiments, has to be done to figure out the user model. It is also within the realm of possibility to have an aggregate user model that is fuzzy or undefined. Here the user may not know how the program is supposed to work.','User Interface Design For Programmers by Joel Spolsky','regular');
+INSERT INTO notes VALUES(91,'Every option given to the user is a choice the user has to make. Making choices isn''t inherantly bad, but making choices about something the user doesn''t care about is certainly bad.','User Interface Design For Programmers by Joel Spolsky','regular');
+INSERT INTO notes VALUES(92,'Activity Based Planning is designing a ui around activities a user intends to do with the application. This is in contrast designing around the capabilities of an app. Activity Based Planning is meant to have user centric design and make these activities as easy for the user to do as possible.','User Interface Design For Programmers by Joel Spolsky','regular');
 CREATE TABLE links (
 id INTEGER PRIMARY KEY,
 source INTEGER NOT NULL,
@@ -154,6 +163,15 @@ INSERT INTO links VALUES(55,78,81);
 INSERT INTO links VALUES(56,31,82);
 INSERT INTO links VALUES(57,81,82);
 INSERT INTO links VALUES(58,83,78);
+INSERT INTO links VALUES(59,84,79);
+INSERT INTO links VALUES(60,85,86);
+INSERT INTO links VALUES(61,84,86);
+INSERT INTO links VALUES(62,88,85);
+INSERT INTO links VALUES(63,87,89);
+INSERT INTO links VALUES(64,85,89);
+INSERT INTO links VALUES(65,87,90);
+INSERT INTO links VALUES(66,88,91);
+INSERT INTO links VALUES(67,88,92);
 CREATE TABLE actions (
 id INTEGER PRIMARY KEY,
 type TEXT NOT NULL,
@@ -305,4 +323,24 @@ INSERT INTO actions VALUES(142,'insertLink','id: 56, source: 31, target: 82');
 INSERT INTO actions VALUES(143,'insertLink','id: 57, source: 81, target: 82');
 INSERT INTO actions VALUES(144,'createNote','id: 83, content: Why do we procrastinate?, source: Index, variant: index)');
 INSERT INTO actions VALUES(145,'insertLink','id: 58, source: 83, target: 78');
+INSERT INTO actions VALUES(146,'createNote','id: 84, content: Learned helplessness is the phenomenon attributing an individual''s unhappiness to that individual''s perception of helplessness and their perception of a lack of control of their environment., source: User Interface Design For Programmers by Joel Spolsky, variant: regular)');
+INSERT INTO actions VALUES(147,'insertLink','id: 59, source: 84, target: 79');
+INSERT INTO actions VALUES(148,'createNote','id: 85, content: A well designed user interface behaves exactly as the user expects it to., source: User Interface Design For Programmers by Joel Spolsky, variant: regular)');
+INSERT INTO actions VALUES(149,'createNote','id: 86, content: Tools that do not behave as expected can cause a user to feel helplessness and not in control of their environment., source: User Interface Design for Programmers by Joel Spolsky, variant: regular)');
+INSERT INTO actions VALUES(150,'insertLink','id: 60, source: 85, target: 86');
+INSERT INTO actions VALUES(151,'insertLink','id: 61, source: 84, target: 86');
+INSERT INTO actions VALUES(152,'createNote','id: 87, content: A User Model is a user''s idea of how a program works. The Program Model is how it actually works. , source: User Interface Design For Programmers by Joel Spolsky, variant: regular)');
+INSERT INTO actions VALUES(153,'createNote','id: 88, content: How do we think about user interface design?, source: Index, variant: index)');
+INSERT INTO actions VALUES(154,'insertLink','id: 62, source: 88, target: 85');
+INSERT INTO actions VALUES(155,'insertLink','id: 63, source: 85, target: 87');
+INSERT INTO actions VALUES(156,'deleteLink','id: 63, source: 85, target: 87');
+INSERT INTO actions VALUES(157,'createNote','id: 89, content: It''s often much easier to change the program model to adhere to the user model than to change the user model to adher to the program model., source: User Interface Design For Programmers by Joel Spolsky, variant: regular)');
+INSERT INTO actions VALUES(158,'insertLink','id: 63, source: 87, target: 89');
+INSERT INTO actions VALUES(159,'insertLink','id: 64, source: 85, target: 89');
+INSERT INTO actions VALUES(160,'createNote','id: 90, content: It''s possible and probable to have uncertainty about what the aggregate user model is. Often research, like user interviews and experiments, has to be done to figure out the user model. It is also within the realm of possibility to have an aggregate user model that is fuzzy or undefined. Here the user may not know how the program is supposed to work., source: User Interface Design For Programmers by Joel Spolsky, variant: regular)');
+INSERT INTO actions VALUES(161,'insertLink','id: 65, source: 87, target: 90');
+INSERT INTO actions VALUES(162,'createNote','id: 91, content: Every option given to the user is a choice the user has to make. Making choices isn''t inherantly bad, but making choices about something the user doesn''t care about is certainly bad., source: User Interface Design For Programmers by Joel Spolsky, variant: regular)');
+INSERT INTO actions VALUES(163,'insertLink','id: 66, source: 88, target: 91');
+INSERT INTO actions VALUES(164,'createNote','id: 92, content: Activity Based Planning is designing a ui around activities a user intends to do with the application. This is in contrast designing around the capabilities of an app. Activity Based Planning is meant to have user centric design and make these activities as easy for the user to do as possible., source: User Interface Design For Programmers by Joel Spolsky, variant: regular)');
+INSERT INTO actions VALUES(165,'insertLink','id: 67, source: 88, target: 92');
 COMMIT;
