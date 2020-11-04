@@ -12,3 +12,8 @@ Large projects and high amounts of uncertainty can lead to action paralysis and 
 
 Procrastinators and workaholics are trapped in a cycle of working or feeling guilty about not working. Guilt free play can break this cycle. Play is important to re-energize and re-vitalize the mind and body. Play is what teaches children the excitement of discovery and showcases humans innate creativeness. Everything is play to a child and learning needs no motivation in that mindset. Later in life adults are taught that work is hard and painful. People reach for procrastination as relief from this pain. 
 
+The pull method of motivation capitalizes on human tendency to be motivated to work productively when incentivezed with pleasure and success as a reward rather than the push method which is characterized by working to avoid pain. Often when people are motivated with the push method, procrastination is reached for to avoid pain rather than working to avoid pain.
+
+Coupling guilt free play with the pull method of motivation can maximize time spent on focused, quality work. 
+
+Guilt free play is also conducive to taking advantage of the Ziegarnik effect, letting the subconcious mind work on problems not put down in the background while the concious mind is occupied.
