@@ -12,7 +12,7 @@ Surprising the user is a risk as this could be a negative experience for a user.
 
 Good progress indicators
 1) Give immediate feedback
-*2) Provide a sense of time (how much has progressed and is pending)
+2) *Provide a sense of time (how much has progressed and is pending)
 3) Removes doubt (gradual progress reassures people app is working)
 
 Patterns to replace loading spinner
