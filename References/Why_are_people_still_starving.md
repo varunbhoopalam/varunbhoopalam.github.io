@@ -1,0 +1,4 @@
+https://www.technologyreview.com/2020/12/17/1013213/hunger-starvation-food-policy-history/?truid=&utm_source=the_download&utm_medium=email&utm_campaign=the_download.unpaid.engagement&utm_term=&utm_content=12-18-2020
+by Bobbie Johnson
+
+The world as a whole has gotten worse at feeding everyone. More people are starving in 2020 than in 2014. (Is a higher percentage or lower percentage?) The root causes of starvation are known but have not been addressed. The world produces enough food to feed everyone yet millions starve. Some blame this partially on indstrialized nations subsidizing food and exporting to countries undercutting local competition. This never gives them a chance to rise out of the circle of poverty. Additional challenges may be on the horizon as well. People have forcasted water shortages due to climate change leading to a reduction in agriculture capabilities and less food to go around.
