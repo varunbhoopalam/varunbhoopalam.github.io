@@ -1,0 +1,3 @@
+https://www.technologyreview.com/2020/01/15/130892/climate-change-green-infrastructure-us-public-works-building-boom/
+
+Huge amounts of infrastructure need to be in place to combat inevitable climate change. This is a problem because the U.S. has been very slow at building new things and rebuilding old things. The author slides to this being the result of public a us government designed to make slow decisions. There are two instances in the past of the US building things quickly, both when the federal government stepped in to combat economic downturn new deal. The author also says that the US must change public sentiment towards climate change to an immediate threat to get major traction on public projects like these
