@@ -99,6 +99,10 @@ INSERT INTO notes VALUES(89,'It''s often much easier to change the program model
 INSERT INTO notes VALUES(90,'It''s possible and probable to have uncertainty about what the aggregate user model is. Often research, like user interviews and experiments, has to be done to figure out the user model. It is also within the realm of possibility to have an aggregate user model that is fuzzy or undefined. Here the user may not know how the program is supposed to work.','User Interface Design For Programmers by Joel Spolsky','regular');
 INSERT INTO notes VALUES(91,'Every option given to the user is a choice the user has to make. Making choices isn''t inherantly bad, but making choices about something the user doesn''t care about is certainly bad.','User Interface Design For Programmers by Joel Spolsky','regular');
 INSERT INTO notes VALUES(92,'Activity Based Planning is designing a ui around activities a user intends to do with the application. This is in contrast designing around the capabilities of an app. Activity Based Planning is meant to have user centric design and make these activities as easy for the user to do as possible.','User Interface Design For Programmers by Joel Spolsky','regular');
+INSERT INTO notes VALUES(93,'The natural limit of a group bound by gossip, intimate acquaintance, is 150. This is reflected today from human organizations.','Sapiens - A Brief History of Humankind by Yuval Noah Harrari','regular');
+INSERT INTO notes VALUES(94,'An imagined reality can exert force in the real world as long as there is collective belief in it.','Sapiens - A Brief History of Humankind by Yuval Noah Harrari','regular');
+INSERT INTO notes VALUES(95,'Evolutionary psychology comes from the belief that present day social and psychological characteristics were shaped from sapiens thousands of years as hunters and gatherers. Thus behaviors can be explained by studying humans at that period of time.','Sapiens - A Brief History of Humankind by Yuval Noah Harrari','regular');
+INSERT INTO notes VALUES(96,'Myths and stories allow sapiens to cooperate with high degrees of flexibility at large numbers/any scale.','Sapiens - A Brief History of Humankind by Yuval Noah Harrari','regular');
 CREATE TABLE links (
 id INTEGER PRIMARY KEY,
 source INTEGER NOT NULL,
@@ -172,6 +176,8 @@ INSERT INTO links VALUES(64,85,89);
 INSERT INTO links VALUES(65,87,90);
 INSERT INTO links VALUES(66,88,91);
 INSERT INTO links VALUES(67,88,92);
+INSERT INTO links VALUES(68,96,94);
+INSERT INTO links VALUES(69,96,29);
 CREATE TABLE actions (
 id INTEGER PRIMARY KEY,
 type TEXT NOT NULL,
@@ -343,4 +349,10 @@ INSERT INTO actions VALUES(162,'createNote','id: 91, content: Every option given
 INSERT INTO actions VALUES(163,'insertLink','id: 66, source: 88, target: 91');
 INSERT INTO actions VALUES(164,'createNote','id: 92, content: Activity Based Planning is designing a ui around activities a user intends to do with the application. This is in contrast designing around the capabilities of an app. Activity Based Planning is meant to have user centric design and make these activities as easy for the user to do as possible., source: User Interface Design For Programmers by Joel Spolsky, variant: regular)');
 INSERT INTO actions VALUES(165,'insertLink','id: 67, source: 88, target: 92');
+INSERT INTO actions VALUES(166,'createNote','id: 93, content: The natural limit of a group bound by gossip, intimate acquaintance, is 150. This is reflected today from human organizations., source: Sapiens - A Brief History of Humankind by Yuval Noah Harrari, variant: regular)');
+INSERT INTO actions VALUES(167,'createNote','id: 94, content: An imagined reality can exert force in the real world as long as there is collective belief in it., source: Sapiens - A Brief History of Humankind by Yuval Noah Harrari, variant: regular)');
+INSERT INTO actions VALUES(168,'createNote','id: 95, content: Evolutionary psychology comes from the belief that present day social and psychological characteristics were shaped from sapiens thousands of years as hunters and gatherers. Thus behaviors can be explained by studying humans at that period of time., source: Sapiens - A Brief History of Humankind by Yuval Noah Harrari, variant: regular)');
+INSERT INTO actions VALUES(169,'createNote','id: 96, content: Myths and stories allow sapiens to cooperate with high degrees of flexibility at large numbers/any scale., source: Sapiens - A Brief History of Humankind by Yuval Noah Harrari, variant: regular)');
+INSERT INTO actions VALUES(170,'insertLink','id: 68, source: 96, target: 94');
+INSERT INTO actions VALUES(171,'insertLink','id: 69, source: 96, target: 29');
 COMMIT;
